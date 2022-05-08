@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Hints</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<script src="xWordHintsClient.jsx">
+</script>
+<h4>&nbsp;Crossword Hints</h4>
+<p>
+    <input type="text" id="word" placeholder="word" spellcheck="false">
+</p>
+<p>
+    <select id="wordType" onchange="changeType(this.value)">
+        <option value="crossword">Crossword</option>
+        <option value="scrabble">Scrabble</option>
+        <option value="wordle">Wordle</option>
+    </select>
+</p>
+<div id="optionalField"></div>
+<p>
+    <input type="button" value="Submit" onclick="doIt()">
+</p>
+<p id="result" class="result"></p>
+<input type="hidden" id="port" value="XXXX">
+</body>
+</html>
